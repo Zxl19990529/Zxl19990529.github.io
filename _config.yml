@@ -12,7 +12,7 @@ title                    : "佘傲雪的个人主页"
 title_separator          : "-"
 name                     : &name "佘傲雪"
 description              : &description "个人描述"
-url                      : https://zxl19990529.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://sheaoxue.asia # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Zxl19990529/zxl19990529.github.io"
 
