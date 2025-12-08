@@ -15,7 +15,7 @@ My research instresets include image segmentation, object detection, and multimo
 
 ### Preprint
 
-<div style="float:left; padding:10px;"><img src="../images/AdaTok.png" alt="AdaTok: Adaptive Token Compression with Object-Aware Representations for Efficient Multimodal LLMs" width="400"></div>  
+<div style="float:left; padding:10px;"><img src="../images/AdaTok.png" alt="AdaTok: Adaptive Token Compression with Object-Aware Representations for Efficient Multimodal LLMs" width="200"></div>  
 
 [AdaTok: Adaptive Token Compression with Object-Aware Representations for Efficient Multimodal LLMs](https://arxiv.org/abs/2511.14169)  
 **arXiv 18 Nov 2025**  
@@ -27,7 +27,7 @@ My research instresets include image segmentation, object detection, and multimo
 ### Conference Papers
 
 
-<div style="float:left; padding:10px;"><img src="../images/cdsp_aaai24.png" alt="Scribble Hides Class: Promoting Scribble-Based Weakly-Supervised Semantic Segmentation with Its Class Label" width="400"></div>  
+<div style="float:left; padding:10px;"><img src="../images/cdsp_aaai24.png" alt="Scribble Hides Class: Promoting Scribble-Based Weakly-Supervised Semantic Segmentation with Its Class Label" width="200"></div>  
 
 [Scribble Hides Class: Promoting Scribble-Based Weakly-Supervised Semantic Segmentation with Its Class Label](https://doi.org/10.1609/aaai.v38i7.28563)  
 **AAAI 2024**, (***CCF-A***) [[poster](https://ojs.aaai.org/index.php/AAAI/article/view/28563/29095)]
@@ -40,7 +40,7 @@ My research instresets include image segmentation, object detection, and multimo
 <div style=" padding:10px;"></div>  
 
 ### Journal Papers
-<div style="float:left; padding:10px;"><img src="../images/eswa_25.png" alt="Generative learning-based lightweight MRI brain tumor segmentation with missing modalities" width="400"></div>  
+<div style="float:left; padding:10px;"><img src="../images/eswa_25.png" alt="Generative learning-based lightweight MRI brain tumor segmentation with missing modalities" width="200"></div>  
 
 [Generative learning-based lightweight MRI brain tumor segmentation with missing modalities](https://www.sciencedirect.com/science/article/abs/pii/S0957417424023455)
 
