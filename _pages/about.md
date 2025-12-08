@@ -42,11 +42,11 @@ My research instresets include image segmentation, object detection, and multimo
 ### Journal Papers
 <div style="float:left; padding:10px;"><img src="../images/eswa_25.png" alt="Generative learning-based lightweight MRI brain tumor segmentation with missing modalities" width="200"></div>  
 
-[Generative learning-based lightweight MRI brain tumor segmentation with missing modalities](https://www.sciencedirect.com/science/article/abs/pii/S0957417424023455)
-
+[Generative learning-based lightweight MRI brain tumor segmentation with missing modalities](https://www.sciencedirect.com/science/article/abs/pii/S0957417424023455)  
+  **Expert Systems with Applications** ,(***IF=7.5***) [doi](https://doi.org/10.1016/j.eswa.2024.125478)  
   **Xinliang Zhang**,  Qian Chen, Hangzhou He, Lei Zhu, Zhaoheng Xie, Yanye Lu*, Fangxiao Cheng*
   
-  **Expert Systems with Applications** ,(***IF=7.5***) [doi](https://doi.org/10.1016/j.eswa.2024.125478)
+  
 
 <div style=" padding:10px;"></div>  
 <!-- <div style=" padding:10px;"></div>   -->
