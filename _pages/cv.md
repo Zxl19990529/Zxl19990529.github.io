@@ -15,7 +15,7 @@ Education
 * M.S. in Tianjin University, 2021~2024
 * B.S. in Ocean University of China, 2017~2021
 
-Work experience
+<!-- Work experience
 ======
 * Spring 2024: Academic Pages Collaborator
   * GitHub University
@@ -30,18 +30,21 @@ Work experience
 * Summer 2015: Research Assistant
   * GitHub University
   * Duties included: Tagging issues
-  * Supervisor: Professor Git
+  * Supervisor: Professor Git -->
   
-<!-- Skills
+Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+- Website (I am the operator of [MILab](wiki.milab.wiki) website)
+  - Java
+  - MySQL
+  - Cloud Linux
+  
+* Deep learning
+  * Python
+  * C++
+  * MATLAB
 
-Publications
+<!-- Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}

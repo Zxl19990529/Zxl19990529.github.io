@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "This"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -15,35 +15,47 @@ My research instresets include image segmentation, object detection, and multimo
 
 ### Preprint
 
-- **AdaTok: Adaptive Token Compression with Object-Aware Representations for Efficient Multimodal LLMs**
+<div style="float:left; padding:10px;"><img src="../images/AdaTok.png" alt="AdaTok: Adaptive Token Compression with Object-Aware Representations for Efficient Multimodal LLMs" width="400"></div>  
 
-  **Xinliang Zhang**, Lei Zhu, Hangzhou He, Shuang Zeng, Ourui Fu, Jiakui Hu, Zhengjian Yao, Yanye Lu*
+[AdaTok: Adaptive Token Compression with Object-Aware Representations for Efficient Multimodal LLMs](https://arxiv.org/abs/2511.14169)  
+**arXiv 18 Nov 2025**  
+**Xinliang Zhang**, Lei Zhu, Hangzhou He, Shuang Zeng, Ourui Fu, Jiakui Hu, Zhengjian Yao, Yanye Lu*
 
-  **arXiv 18 Nov 2025**
-  [[pdf](https://arxiv.org/abs/2511.14169)]
+  
+<div style=" padding:10px;"></div>  
+
 ### Conference Papers
 
-- **Scribble Hides Class: Promoting Scribble-Based Weakly-Supervised Semantic Segmentation with Its Class Label**
 
-  **Xinliang Zhang #, Lei Zhu #**, Hangzhou He, Lujia Jin, Yanye Lu*
+<div style="float:left; padding:10px;"><img src="../images/cdsp_aaai24.png" alt="Scribble Hides Class: Promoting Scribble-Based Weakly-Supervised Semantic Segmentation with Its Class Label" width="400"></div>  
 
-  **AAAI 2024** (main track [poster](https://ojs.aaai.org/index.php/AAAI/article/view/28563/29095)) 
-  [[pdf](https://arxiv.org/abs/2501.04975)] [[doi](https://doi.org/10.1609/aaai.v38i7.28563)] [[code](https://github.com/Zxl19990529/Class-driven-Scribble-Promotion-Network)]
+[Scribble Hides Class: Promoting Scribble-Based Weakly-Supervised Semantic Segmentation with Its Class Label](https://doi.org/10.1609/aaai.v38i7.28563)  
+**AAAI 2024**, (***CCF-A***) [[poster](https://ojs.aaai.org/index.php/AAAI/article/view/28563/29095)]
+[[pdf](https://arxiv.org/abs/2402.17555)] [[doi](https://doi.org/10.1609/aaai.v38i7.28563)] [[code](https://github.com/Zxl19990529/Class-driven-Scribble-Promotion-Network)]  
+**Xinliang Zhang #, Lei Zhu #**, Hangzhou He, Lujia Jin, Yanye Lu* 
 
+
+<div style=" padding:10px;"></div>  
+<div style=" padding:10px;"></div>  
+<div style=" padding:10px;"></div>  
 
 ### Journal Papers
+<div style="float:left; padding:10px;"><img src="../images/eswa_25.png" alt="Generative learning-based lightweight MRI brain tumor segmentation with missing modalities" width="400"></div>  
 
-- **Generative learning-based lightweight MRI brain tumor segmentation with missing modalities** 
+[Generative learning-based lightweight MRI brain tumor segmentation with missing modalities](https://www.sciencedirect.com/science/article/abs/pii/S0957417424023455)
 
   **Xinliang Zhang**,  Qian Chen, Hangzhou He, Lei Zhu, Zhaoheng Xie, Yanye Lu*, Fangxiao Cheng*
   
-  **Expert Systems with Applications** [[doi](https://doi.org/10.1609/aaai.v38i7.28563)] 
+  **Expert Systems with Applications** ,(***IF=7.5***) [doi](https://doi.org/10.1016/j.eswa.2024.125478)
 
+<div style=" padding:10px;"></div>  
+<!-- <div style=" padding:10px;"></div>   -->
+<div style=" padding:10px;"></div>  
 
 ### Book Chapter
 
 - **Learning-Based Material Decomposition for Spectral X-Ray Imaging,** 
 
-  Xinliang Zhang#, Jiakui Hu#, Yanye Lu*,
+  **Xinliang Zhang#, Jiakui Hu#**, Yanye Lu*,
   
   **Deep Learning for Advanced X-ray Detection and Imaging Applications. Springer, Cham, 87-105. (Book Chapter)** [[doi](https://doi.org/10.1007/978-3-031-75653-5_5)] 
