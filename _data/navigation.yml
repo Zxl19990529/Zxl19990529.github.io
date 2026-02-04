@@ -1,0 +1,11 @@
+pages:
+- name: Home
+  url: ./
+- name: Publications
+  url: publications
+- name: News
+  url: ./#news
+- name: Projects
+  url: ./#projects
+- name: Contact
+  url: ./#contact

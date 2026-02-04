@@ -1,0 +1,63 @@
+primary_name: "Xinliang Zhang"
+# secondary_name: ""
+resume: assets/cv/Resume.pdf
+
+positions:
+  - '<span class="no-break"><img src="assets/images/badges/PKU_red.png" alt="Peking University" class="inline-badge"/></span> Ph.D. Student, Institute of Medical Technology, Peking University'
+
+
+email: "zhangxinliang@stu.pku.edu.cn"
+# cv_link: link-to-your-cv-file
+gscholar: W51OocEAAAAJ  # This is an example, replace it with your own Google Scholar ID
+github: your_github_id
+# twitter: your_twitter_id  # Do not include the '@' symbol
+# wechat_qrcode: /assets/images/etc/wechat.jpg
+# wechat_prompt: >-
+#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
+# linkedin: your-linked-in-id
+orcid: 0009-0009-8252-7597
+
+short_bio_text_justify: false
+short_bio: >-
+  I am a Ph.D. student at the <span class="text-pku-red">Institute of Medical Technology, Peking University Health Science Center</span>. My research focuses on <span class="text-highlight">Multimodal Large Language Models for efficient reasoning and comprehension</span>. My interests include <span class="text-highlight">Multimodal Large Language Models</span>, <span class="text-highlight">Weakly Supervised Image Segmentation</span>, and <span class="text-highlight">Medical Image Analysis</span>. I am supervised by <a href="https://nbic.pku.edu.cn/en/Faculty/Researchers/AdjunctPrincipalInvestigators/0a96455fce164e508fbe96162ef92f79.htm" target="_blank">Prof. Yanye Lu</a>.
+
+portrait_url: /assets/images/photos/myphoto.jpg
+portrait_caption: >-
+  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+
+education:
+- name: Peking University
+  logo: /assets/images/badges/PKU_red.png
+  position: >- 
+    Institute of Medical Technology, Peking University Health Science Center <br/>
+    Ph.D. Student
+  date: Sep. 2025 - Present
+- name: Tianjin University
+  logo: /assets/images/badges/tju_badge_white.png
+  position: >- 
+    College of Intelligence and Computing <br/>
+    M.S Student
+  date: Sep. 2021 - Jul. 2024
+- name: Ocean University of China
+  logo: /assets/images/badges/OUC.png
+  position: >- 
+    School of Computer Science and Technology <br/>
+    B.S. Student
+  date: Sep. 2017 - Jul. 2021
+
+
+# experience:
+# - name: Peking University
+#   logo: /assets/images/badges/PKU_red.png
+#   position: Research Intern
+#   date: Sep. 2019 - Jul. 2021
+
+awards:
+- name: Outstanding cadres of Tianjin University
+  date: 2024
+- name: Outstanding graduates of Shandong Province
+  date: 2021
+- name: China Underwater Robot Professional Contest - Second Prize
+  date: 2019
+# - name: A quick brown fox jumps over the lazy dog and runs away award
+#   date: 2021
