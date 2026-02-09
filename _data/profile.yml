@@ -3,7 +3,11 @@ primary_name: "Xinliang Zhang"
 resume: assets/cv/Resume.pdf
 
 positions:
-  - '<span class="no-break"><img src="assets/images/badges/PKU_red.png" alt="Peking University" class="inline-badge"/></span> Ph.D. Student, Institute of Medical Technology, Peking University'
+- name: Ph.D. Student
+- name: Institute of Medical Technology, Peking University Health Science Center
+  logo: /assets/images/badges/PKU_red.png  # Logo is optional
+
+  # - '<span class="no-break"><img src="assets/images/badges/PKU_red.png" alt="Peking University" class="inline-badge"/></span> Ph.D. Student, Institute of Medical Technology, Peking University'
 
 
 email: "zhangxinliang@stu.pku.edu.cn"
@@ -23,7 +27,7 @@ short_bio: >-
 
 portrait_url: /assets/images/photos/myphoto.jpg
 portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+  I am a Ph.D. student at Peking University.
 
 education:
 - name: Peking University
