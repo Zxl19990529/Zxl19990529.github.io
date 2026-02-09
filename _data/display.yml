@@ -19,7 +19,7 @@ homepage:
   num_news: 10
   order:
     - profile
-    - news
+    # - news
     - publications
     - roadmap
     - projects

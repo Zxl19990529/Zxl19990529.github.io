@@ -9,7 +9,7 @@ positions:
 email: "zhangxinliang@stu.pku.edu.cn"
 # cv_link: link-to-your-cv-file
 gscholar: W51OocEAAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
+github: Zxl19990529
 # twitter: your_twitter_id  # Do not include the '@' symbol
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
@@ -46,11 +46,11 @@ education:
   date: Sep. 2017 - Jul. 2021
 
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: Peking University
+  logo: /assets/images/badges/PKU_red.png
+  position: Research Intern
+  date: May. 2024 - Sep. 2025
 
 awards:
 - name: Outstanding cadres of Tianjin University
