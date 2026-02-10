@@ -4,7 +4,7 @@ resume: assets/cv/Resume.pdf
 
 positions:
 - name: Ph.D. Student
-- name: Institute of Medical Technology, Peking University Health Science Center
+- name: Peking University
   logo: /assets/images/badges/PKU_red.png  # Logo is optional
 
   # - '<span class="no-break"><img src="assets/images/badges/PKU_red.png" alt="Peking University" class="inline-badge"/></span> Ph.D. Student, Institute of Medical Technology, Peking University'
@@ -23,7 +23,7 @@ orcid: 0009-0009-8252-7597
 
 short_bio_text_justify: false
 short_bio: >-
-  I am a Ph.D. student at the <span class="text-pku-red">Institute of Medical Technology, Peking University Health Science Center</span>. My research focuses on <span class="text-highlight">Multimodal Large Language Models for efficient reasoning and comprehension</span>. My interests include <span class="text-highlight">Multimodal Large Language Models</span>, <span class="text-highlight">Weakly Supervised Image Segmentation</span>, and <span class="text-highlight">Medical Image Analysis</span>. I am supervised by <a href="https://nbic.pku.edu.cn/en/Faculty/Researchers/AdjunctPrincipalInvestigators/0a96455fce164e508fbe96162ef92f79.htm" target="_blank">Prof. Yanye Lu</a>.
+  I am a Ph.D. student at the <span class="text-pku-red">Institute of Medical Technology, Peking University</span>. My research focuses on <span class="text-highlight">Multimodal Large Language Models for efficient reasoning and comprehension</span>. My interests include <span class="text-highlight">Multimodal Large Language Models</span>, <span class="text-highlight">Weakly Supervised Image Segmentation</span>, and <span class="text-highlight">Medical Image Analysis</span>. I am supervised by <a href="https://nbic.pku.edu.cn/en/Faculty/Researchers/AdjunctPrincipalInvestigators/0a96455fce164e508fbe96162ef92f79.htm" target="_blank">Prof. Yanye Lu</a>.
 
 portrait_url: /assets/images/photos/myphoto.jpg
 portrait_caption: >-
