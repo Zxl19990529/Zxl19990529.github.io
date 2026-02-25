@@ -1,5 +1,5 @@
 ---
-title:          "Branches Mutual Promotion for End-to-End Weakly Supervised Semantic Segmentation"
+title:          "Points-Supervised Fundus Vessel Segmentation via Shape Priors and Contrastive Learning"
 date:           2025-06-14
 selected:       true
 pub:            " IEEE Transactions on Medical Imaging(TMI)"
