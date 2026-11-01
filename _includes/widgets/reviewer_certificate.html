@@ -1,0 +1,16 @@
+{%- assign certificate = include.certificate -%}
+<article class="reviewer-certificate">
+    <a href="{{ certificate.certificate_url | relative_url }}" class="d-block" target="_blank" rel="noopener noreferrer" aria-label="View {{ certificate.title | escape }} certificate (PDF)">
+        <img src="{{ certificate.preview_url | relative_url }}" alt="{{ certificate.title | escape }} certificate awarded to Xinliang Zhang" class="img-fluid reviewer-certificate-preview" width="{{ certificate.preview_width }}" height="{{ certificate.preview_height }}" loading="lazy" decoding="async">
+    </a>
+    <div class="p-4">
+        {% if certificate.outstanding %}
+        <span class="badge badge-warning mb-2">Outstanding Reviewer</span>
+        {% else %}
+        <span class="badge badge-info mb-2">Journal Reviewer</span>
+        {% endif %}
+        <h2 class="h5 mb-2">{{ certificate.title }}</h2>
+        <p class="small text-muted mb-3"><time datetime="{{ certificate.date | date: '%Y-%m-%d' }}">{{ certificate.date | date: '%B %d, %Y' }}</time></p>
+        <a href="{{ certificate.certificate_url | relative_url }}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">View Certificate (PDF) <i class="fas fa-external-link-alt ml-1" aria-hidden="true"></i></a>
+    </div>
+</article>

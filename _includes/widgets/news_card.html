@@ -10,7 +10,12 @@
             <div class="media-body">
                 {% for item in year.items %}
                 <div class="my-1 d-flex">
-                    <div>{{ item.title }}</div>
+                    <div>
+                        {{ item.title }}
+                        {% if item.certificate_url %}
+                        <a href="{{ item.certificate_url | relative_url }}" target="_blank" rel="noopener noreferrer">[Certificate]</a>
+                        {% endif %}
+                    </div>
                     <div class="ml-auto mt-auto text-muted no-break"><i>{{ item.date | date: "%b %d" }}</i></div>
                 </div>
                 {% endfor %}

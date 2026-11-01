@@ -1,0 +1,123 @@
+# Use one current edition across all publications, rather than publication-year rankings.
+# CAS values are the 2025 upgraded edition's broad-subject divisions, not JCR quartiles.
+verified_on: 2026-11-01
+cas:
+  year: 2025
+  edition: 升级版
+  scope: 大类分区
+  source_page: https://cce.ncepu.edu.cn/xzzx/yjsjx1/7632005045644e61a0d12c7bbeff6204.htm
+  source_file: https://cce.ncepu.edu.cn/docs//2026-09/0e77800bf2744596a26e43c83acceed0.xlsx
+  source_sheet: 期刊汇总
+  exported_on: 2026-09-28
+ccf:
+  year: 2026
+  edition: 第七版正式目录
+  published_on: 2026-03-31
+  corrected_on: 2026-04-09
+  source_page: https://www.ccf.org.cn/Academic_Evaluation/By_category/
+  source_file: https://lib.zjgsu.edu.cn/_upload/article/files/f5/b1/f4f7201343b88c0f10564f590ebe/854a3c68-36a6-4698-a359-5184d5e30a0c.pdf
+
+venues:
+  ieee_access:
+    kind: journal
+    name: IEEE Access
+    issn: 2169-3536
+    cas_category: 计算机科学
+    cas_zone: 4
+    cas_top: false
+    cas_source_row: 21443
+  eswa:
+    kind: journal
+    name: Expert Systems with Applications
+    issn: 0957-4174
+    cas_category: 计算机科学
+    cas_zone: 1
+    cas_top: true
+    cas_source_row: 1413
+    ccf_grade: C
+    ccf_source_page: 54
+  ivc:
+    kind: journal
+    name: Image and Vision Computing
+    issn: 0262-8856
+    cas_category: 计算机科学
+    cas_zone: 3
+    cas_top: false
+    cas_source_row: 8817
+    ccf_grade: C
+    ccf_source_page: 55
+  tnnls:
+    kind: journal
+    name: IEEE Transactions on Neural Networks and Learning Systems
+    issn: 2162-237X
+    cas_category: 计算机科学
+    cas_zone: 1
+    cas_top: true
+    cas_source_row: 1436
+    ccf_grade: B
+    ccf_source_page: 52
+  tmi:
+    kind: journal
+    name: IEEE Transactions on Medical Imaging
+    issn: 0278-0062
+    cas_category: 医学
+    cas_zone: 1
+    cas_top: true
+    cas_source_row: 287
+    ccf_grade: B
+    ccf_source_page: 68
+  tip:
+    kind: journal
+    name: IEEE Transactions on Image Processing
+    issn: 1057-7149
+    cas_category: 计算机科学
+    cas_zone: 1
+    cas_top: true
+    cas_source_row: 1423
+    ccf_grade: A
+    ccf_source_page: 44
+  tpami:
+    kind: journal
+    name: IEEE Transactions on Pattern Analysis and Machine Intelligence
+    issn: 0162-8828
+    cas_category: 计算机科学
+    cas_zone: 1
+    cas_top: true
+    cas_source_row: 1427
+    ccf_grade: A
+    ccf_source_page: 51
+  aaai:
+    kind: conference
+    name: AAAI Conference on Artificial Intelligence
+    ccf_grade: A
+    ccf_source_page: 57
+  cvpr:
+    kind: conference
+    name: IEEE/CVF Conference on Computer Vision and Pattern Recognition
+    ccf_grade: A
+    ccf_source_page: 57
+  miccai:
+    kind: conference
+    name: International Conference on Medical Image Computing and Computer-Assisted Intervention
+    ccf_grade: B
+    ccf_source_page: 71
+  icme:
+    kind: conference
+    name: IEEE International Conference on Multimedia and Expo
+    ccf_grade: B
+    ccf_source_page: 48
+  ijcnn:
+    kind: conference
+    name: International Joint Conference on Neural Networks
+    ccf_grade: C
+    ccf_source_page: 60
+  oceans:
+    kind: conference
+    name: Global Oceans 2020 / OCEANS
+    ccf_listed: false
+  arxiv:
+    kind: preprint
+    name: arXiv
+  springer_chapter:
+    kind: book_chapter
+    name: Springer book chapter

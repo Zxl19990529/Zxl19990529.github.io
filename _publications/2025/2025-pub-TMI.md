@@ -1,16 +1,17 @@
 ---
 title:          "Points-Supervised Fundus Vessel Segmentation via Shape Priors and Contrastive Learning"
-date:           2025-06-14
+# Final issue: December 2025; the day is a sorting placeholder.
+date:           2025-12-01
 selected:       true
-pub:            " IEEE Transactions on Medical Imaging(TMI)"
+venue_id: tmi
+pub:            "IEEE Transactions on Medical Imaging (TMI)"
 # pub_pre:        "Submitted to CVPR'26"
 # pub_post:       'Under review.'
-pub_last:       ' <span class="badge badge-pill badge-publication badge-success">中科院一区Top</span>'
-pub_date:       "2025"
+pub_date:       "2025, 44(12): 5038–5050"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
  In this paper, we introduce point annotations to fundus vessel segmentation and propose a novel method, called Points-based Vessel segmentation Network (PVN), to enhance the segmentation accuracy.
-cover:          /assets/images/covers/25_TMI_PVN.gif
+cover: /assets/images/covers/2025_PVN_method.webp
 authors:
   - Kaiwen Li
   - Hangzhou He

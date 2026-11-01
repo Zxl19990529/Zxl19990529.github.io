@@ -1,0 +1,31 @@
+{%- assign venue = site.data.publication_venues.venues[include.venue_id] -%}
+{%- comment -%}
+Display priority: CAS 1/2/3 align with CCF A/B/C. Prefer CAS when tied.
+{%- endcomment -%}
+{%- assign display_cas = false -%}
+{%- assign ccf_rank = nil -%}
+{%- case venue.ccf_grade -%}
+  {%- when 'A' -%}{%- assign ccf_rank = 1 -%}
+  {%- when 'B' -%}{%- assign ccf_rank = 2 -%}
+  {%- when 'C' -%}{%- assign ccf_rank = 3 -%}
+{%- endcase -%}
+{%- if venue.cas_zone -%}
+  {%- assign display_cas = true -%}
+  {%- if ccf_rank and ccf_rank < venue.cas_zone -%}
+    {%- assign display_cas = false -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if display_cas -%}
+<span class="badge badge-pill badge-publication badge-info mr-1" title="中科院 {{ site.data.publication_venues.cas.year }} 年升级版大类分区：{{ venue.cas_category | escape }}">中科院 {{ venue.cas_zone }} 区</span>
+{%- endif -%}
+{%- if venue.cas_top == true -%}
+<span class="badge badge-pill badge-publication badge-danger mr-1" title="中科院 {{ site.data.publication_venues.cas.year }} 年升级版 Top 期刊">中科院 Top</span>
+{%- endif -%}
+{%- if venue.ccf_grade and display_cas == false -%}
+<span class="badge badge-pill badge-publication badge-success mr-1" title="CCF {{ site.data.publication_venues.ccf.year }} 年第七版正式目录">CCF-{{ venue.ccf_grade }}</span>
+{%- elsif venue.ccf_listed == false -%}
+<span class="badge badge-pill badge-publication badge-secondary mr-1" title="未列入 CCF {{ site.data.publication_venues.ccf.year }} 年第七版正式目录">非 CCF 目录</span>
+{%- endif -%}
+{%- if venue.kind == 'preprint' -%}
+<span class="badge badge-pill badge-publication badge-secondary mr-1" title="预印本，无期刊分区或 CCF 会议等级">arXiv Preprint</span>
+{%- endif -%}

@@ -8,9 +8,13 @@ container_class: container-xl
 {% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
 
 {% for group in cards_by_group %}
+{% assign certificate_group = false %}
+{% if group.name == 'Reviewer Certificates' %}{% assign certificate_group = true %}{% endif %}
 <h1>{{ group.name }}</h1>
-<div class="row grid mb-4">
+<div class="row mb-4 {% if certificate_group %}reviewer-certificate-grid{% else %}grid{% endif %}">
+    {% unless certificate_group %}
     <div class="grid-sizer col-1"></div>
+    {% endunless %}
     {% for item in group.items %}
     {% if item.width >= 6 -%}
         {%- assign width_sm = 12 -%}
@@ -22,8 +26,8 @@ container_class: container-xl
         {%- assign width_sm = item.width | times: 2 | at_most: 12 -%}
         {%- assign width_xs = item.width | times: 2 | at_most: 12 -%}
     {%- endif -%}
-    <div class="p-2 grid-item col-md-{{ item.width | at_most: 12 }} col-sm-{{ width_sm }} col-{{ width_xs }}">
-        <div class="{% if item.class != null %}{{ item.class }}{% else %}card border-0 shadow-sm bg-white{% endif %}">
+    <div class="p-2 {% unless certificate_group %}grid-item{% endunless %} col-md-{{ item.width | at_most: 12 }} col-sm-{{ width_sm }} col-{{ width_xs }}">
+        <div class="{% if item.class != null %}{{ item.class }}{% else %}card border-0 shadow-sm bg-white{% endif %}{% if certificate_group %} h-100 overflow-hidden{% endif %}">
             {{ item.content }}
         </div>
     </div>

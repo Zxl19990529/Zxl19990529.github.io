@@ -90,3 +90,25 @@ div.lazy {
     font-family: Source Code Pro, monospace;
 }
 
+.reviewer-certificate {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.reviewer-certificate-preview {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 360px;
+    padding: 1rem;
+    object-fit: contain;
+    background-color: #f4f6f8;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+@media (max-width: 575.98px) {
+    .reviewer-certificate-preview {
+        height: 300px;
+    }
+}
+

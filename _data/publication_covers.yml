@@ -1,0 +1,115 @@
+# Sources of the original paper method figures used as publication thumbnails.
+# PDF page numbers are one-based. No diagrams were generated or redrawn.
+- publication: _publications/2020/2020-pub-SR-ITM-GAN.md
+  cover: /assets/images/covers/2020_SR_ITM_GAN_method.png
+  source_url: https://raw.githubusercontent.com/ZeldaM1/SR-ITM-GAN/master/img/archi.png
+  figure: Generator architecture
+- publication: _publications/2020/2020-pub-counting.md
+  cover: /assets/images/covers/2020_counting_method.png
+  source_url: https://figures.semanticscholar.org/c243efc72fd1b288ef83a3388aaae9e1219d1010/2-Figure1-1.png
+  figure: Figure 1
+  source_metadata_url: https://www.semanticscholar.org/api/1/paper/d13c8e57f9f3406ecf06d5c10be17b58e761fe8e
+  original_publication_url: https://doi.org/10.1109/ACCESS.2020.3038643
+  pdf_page: 2
+  notes: Original extracted figure; added 10 px white padding; no rescaling or redrawing.
+- publication: _publications/2020/2020-pub-measurement.md
+  cover: /assets/images/covers/2020_measurement_method.png
+  source_url: https://www.semanticscholar.org/api/1/paper/05c1e05167e400ae0a1268825feb199409dc6b36
+  figure: Fig. 1
+  image_source_url: https://figures.semanticscholar.org/05c1e05167e400ae0a1268825feb199409dc6b36/2-Figure1-1.png
+  pdf_page: 2
+  notes: Original extracted image retained at native resolution without upscaling.
+- publication: _publications/2023/2023-pub-MLCN.md
+  cover: /assets/images/covers/2023_MLCN_method.png
+  source_url: https://arxiv.org/pdf/2412.03159
+  figure: Fig. 2
+  pdf_page: 3
+- publication: _publications/2024/2024-pub-1.md
+  cover: /assets/images/covers/2024_scribble_method.png
+  source_url: https://arxiv.org/pdf/2402.17555
+  figure: Figure 2
+  pdf_page: 3
+- publication: _publications/2024/2024-pub-BMP.md
+  cover: /assets/images/covers/2024_bmp_method.png
+  source_url: https://arxiv.org/pdf/2308.04949
+  figure: Figure 3
+  pdf_page: 3
+  notes: Public arXiv manuscript version, rather than the paywalled final IEEE journal PDF. Original method overview
+    figure replaces the prior comparison schematic.
+- publication: _publications/2024/2024-pub-IJCNN.md
+  cover: /assets/images/covers/2024_ijcnn_method.png
+  source_url: https://www.semanticscholar.org/api/1/paper/b437743445c87201dfe60fab944c943019f0935b
+  figure: Fig. 2
+  image_source_url: https://figures.semanticscholar.org/b40ea9ed2ac001453f293df89356c490f64b43b1/4-Figure2-1.png
+  pdf_page: 4
+  notes: Original extracted image retained at native resolution without upscaling.
+- publication: _publications/2024/2024-pub-LR-MoE.md
+  cover: /assets/images/covers/2024_LR-MoE_method.webp
+  source_url: https://papers.miccai.org/miccai-2024/paper/1160_paper.pdf
+  figure: Fig. 1
+  pdf_page: 3
+- publication: _publications/2024/2024-pub-spectral-xray-chapter.md
+  cover: /assets/images/covers/2024_Spectral_Xray_chapter_method.png
+  source_url: https://media.springernature.com/full/springer-static/image/chp%3A10.1007%2F978-3-031-75653-5_5/MediaObjects/618020_1_En_5_Fig3_HTML.png
+  figure: Fig. 3
+  source_page: https://link.springer.com/chapter/10.1007/978-3-031-75653-5_5/figures/3
+- publication: _publications/2025/2025-pub-1.md
+  cover: /assets/images/covers/2025_DFH_method.webp
+  source_url: https://ars.els-cdn.com/content/image/1-s2.0-S0957417424023455-gr2.jpg
+  figure: Fig. 2
+  source_page: https://www.sciencedirect.com/science/article/pii/S0957417424023455
+  notes: Existing higher-resolution cover verified against the publisher Fig.2 and retained as source; resized without
+    altering diagram content.
+- publication: _publications/2025/2025-pub-2.md
+  cover: /assets/images/covers/2025_adatok_method.png
+  source_url: https://arxiv.org/pdf/2511.14169
+  figure: Figure 2
+  pdf_page: 3
+- publication: _publications/2025/2025-pub-3.md
+  cover: /assets/images/covers/2025_v2c_method.png
+  source_url: https://arxiv.org/pdf/2501.04975
+  figure: Figure 2
+  pdf_page: 3
+- publication: _publications/2025/2025-pub-Chat-CBM.md
+  cover: /assets/images/covers/2025_chat-cbm_method.png
+  source_url: https://arxiv.org/pdf/2509.17522
+  figure: Figure 2
+  pdf_page: 3
+- publication: _publications/2025/2025-pub-IIR.md
+  cover: /assets/images/covers/2025_iir_method.png
+  source_url: https://arxiv.org/pdf/2507.05838
+  figure: Fig. 3
+  pdf_page: 4
+- publication: _publications/2025/2025-pub-IVC.md
+  cover: /assets/images/covers/2025_AttUKAN_method.webp
+  source_url: https://raw.githubusercontent.com/stevezs315/AttUKAN/main/assets/AttUKAN.png
+  figure: Method Overview (official repository; figure number not specified)
+  source_page: https://github.com/stevezs315/AttUKAN#method-overview
+- publication: _publications/2025/2025-pub-TMI.md
+  cover: /assets/images/covers/2025_PVN_method.webp
+  source_url: https://ieeexplore.ieee.org/document/11072425/
+  figure: PVN overall framework (figure number unconfirmed)
+  source_existing_cover: assets/images/covers/25_TMI_PVN.gif
+  notes: Existing single-frame GIF is already the paper method framework, not results. Preserved native 820x583
+    resolution without upscaling; converted losslessly to WebP. Publisher PDF/figure endpoints inaccessible, so
+    exact figure number could not be independently checked.
+- publication: _publications/2025/2025-pub-class-label.md
+  cover: /assets/images/covers/2025_class-label_method.png
+  source_url: https://arxiv.org/pdf/2503.13895
+  figure: Figure 2
+  pdf_page: 4
+- publication: _publications/2026/2026-pub-SuperCL.md
+  cover: /assets/images/covers/2026_supercl_method.png
+  source_url: https://arxiv.org/pdf/2504.14737
+  figure: Fig. 2
+  pdf_page: 3
+- publication: _publications/2026/2026-pub-bridging.md
+  cover: /assets/images/covers/2026_bridging_method.png
+  source_url: https://arxiv.org/pdf/2601.19506
+  figure: Fig. 2
+  pdf_page: 4
+- publication: _publications/2026/2026-pub-geometry.md
+  cover: /assets/images/covers/2026_geometry_method.png
+  source_url: https://arxiv.org/pdf/2602.21929
+  figure: Figure 2
+  pdf_page: 4
