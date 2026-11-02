@@ -12,31 +12,34 @@
                                 class="figure-img img-fluid" 
                                 data-toggle="tooltip" 
                                 data-placement="top" 
-                                title="{{ site.data.profile.portrait_caption }}">
+                                title="{{ site.data.profile.portrait_caption_zh | escape }}"
+                                data-i18n-title-zh="{{ site.data.profile.portrait_caption_zh | escape }}"
+                                data-i18n-title-en="{{ site.data.profile.portrait_caption | escape }}"
+                                alt="{{ site.data.profile.primary_name_zh }} / {{ site.data.profile.primary_name }}">
                         </div>
                         <div class="mb-3 d-md-none text-center">
-                            <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="max-width: 50%;" alt="Portrait">
+                            <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="max-width: 50%;" alt="{{ site.data.profile.primary_name_zh }} / {{ site.data.profile.primary_name }}">
                         </div>
                         {% endif %}
                     </div>
                 </div>
                 <div class="row">
                     <div class="col text-center h4">
-                        {{ site.data.profile.primary_name }}
+                        {% include i18n.html zh=site.data.profile.primary_name_zh en=site.data.profile.primary_name %}
                     </div>
                 </div>
 
                 <div class="row small">
                     <div class="col text-center">
                         {% for position in site.data.profile.positions %}
-                        {{ position.name }}<br/>
+                        {% include i18n.html zh=position.name_zh en=position.name %}<br/>
                         {% endfor %}
                     </div>
                 </div>
 
                 <div class="row small">
                     <div class="col text-center">
-                        <a class="email-text" href="mailto:{{ site.data.profile.email | encode_email }}">
+                        <a class="email-text" href="mailto:{{ site.data.profile.email | encode_email }}" aria-label="电子邮箱" data-i18n-aria-label-zh="电子邮箱" data-i18n-aria-label-en="Email">
                             {{ site.data.profile.email | replace: "@", "(at)" }}
                         </a>
                     </div>
@@ -50,37 +53,37 @@
                         {%- else -%}
                         {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
                         {%- endif -%}
-                        <a class="px-1 no-break" target="_blank" href="{{ gscholar_url }}">
+                        <a class="px-1 no-break" target="_blank" href="{{ gscholar_url }}" aria-label="谷歌学术" data-i18n-aria-label-zh="谷歌学术" data-i18n-aria-label-en="Google Scholar" title="谷歌学术" data-i18n-title-zh="谷歌学术" data-i18n-title-en="Google Scholar">
                             <i class="fab fa-google-scholar"></i>
                         </a>
                         {% endif %}
                         
                         {% if site.data.profile.github %}
-                        <a class="px-1 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
+                        <a class="px-1 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}" aria-label="GitHub" data-i18n-aria-label-zh="GitHub" data-i18n-aria-label-en="GitHub" title="GitHub" data-i18n-title-zh="GitHub" data-i18n-title-en="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.wechat_qrcode %}
-                        <a class="px-1 no-break" data-toggle="modal" data-target="#modal-wechat">
+                        <a class="px-1 no-break" data-toggle="modal" data-target="#modal-wechat" role="button" aria-label="微信" data-i18n-aria-label-zh="微信" data-i18n-aria-label-en="WeChat">
                             <i class="fab fa-weixin"></i>
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.twitter %}
-                        <a class="px-1 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
+                        <a class="px-1 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}" aria-label="Twitter" data-i18n-aria-label-zh="Twitter" data-i18n-aria-label-en="Twitter" title="Twitter" data-i18n-title-zh="Twitter" data-i18n-title-en="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.linkedin %}
-                        <a class="px-1 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
+                        <a class="px-1 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" aria-label="LinkedIn" data-i18n-aria-label-zh="LinkedIn" data-i18n-aria-label-en="LinkedIn" title="LinkedIn" data-i18n-title-zh="LinkedIn" data-i18n-title-en="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.orcid %}
-                        <a class="px-1 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
+                        <a class="px-1 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}" aria-label="ORCID" data-i18n-aria-label-zh="ORCID" data-i18n-aria-label-en="ORCID" title="ORCID" data-i18n-title-zh="ORCID" data-i18n-title-en="ORCID">
                             <i class="fab fa-orcid"></i>
                         </a>
                         {% endif %}
@@ -97,15 +100,15 @@
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-body p-0">
-                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid">
+                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid" alt="微信二维码 / WeChat QR code">
             </div>
             {% if site.data.profile.wechat_prompt %}
             <div class="modal-body p-1">
-                {{ site.data.profile.wechat_prompt }}
+                {% include i18n.html zh=site.data.profile.wechat_prompt_zh en=site.data.profile.wechat_prompt block=true %}
             </div>
             {% endif %}
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">{% include i18n.html zh="关闭" en="Close" %}</button>
             </div>
         </div>
     </div>

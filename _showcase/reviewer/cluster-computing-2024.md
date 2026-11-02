@@ -4,6 +4,7 @@ group: Reviewer Certificates
 width: 6
 date: 2024-12-02
 title: Cluster Computing
+title_zh: Cluster Computing 审稿证书
 certificate_url: /showcase/reviewer/Reviewer%20Certificate%2002%20December%202024.pdf
 preview_url: /assets/images/reviewer/cluster-computing-2024.webp
 preview_width: 1500

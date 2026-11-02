@@ -46,6 +46,46 @@ h1, h2, h3, h4, h5, h6,
     opacity: 0.95;
 }
 
+.language-switcher {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 0.5rem;
+    white-space: nowrap;
+}
+
+.language-button {
+    border: 0;
+    border-radius: 0.35rem;
+    padding: 0.2rem 0.45rem;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.language-button.active {
+    background: #fff;
+    color: #343a40;
+}
+
+.language-button:focus-visible {
+    outline: 2px solid #80bdff;
+    outline-offset: 2px;
+}
+
+.language-divider {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.75rem;
+}
+
+html[lang="zh-CN"] body {
+    font-family: "Lato", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
 .inline-badge {
     height: 16px;
     vertical-align: -10%;

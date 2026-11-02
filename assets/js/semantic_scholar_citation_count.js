@@ -32,7 +32,8 @@ let showSemanticScholarCitationCount = () => {
             const { citationCount } = JSON.parse(cachedData);
             const elements = document.querySelectorAll(`[data-semantic-scholar-id="${id}"]`);
             elements.forEach(element => {
-                element.innerHTML = `<a class="badge badge-pill badge-publication badge-info" href="https://www.semanticscholar.org/paper/${id}" target="_blank"><i class="ai ai-semantic-scholar"></i> ${parseInt(citationCount).toLocaleString()} citations</a>`;
+                const count = parseInt(citationCount).toLocaleString();
+                element.innerHTML = `<a class="badge badge-pill badge-publication badge-info" href="https://www.semanticscholar.org/paper/${id}" target="_blank"><i class="ai ai-semantic-scholar"></i> <span lang="zh-CN" data-i18n-lang="zh">${count} 次引用</span><span lang="en" data-i18n-lang="en">${count} citations</span></a>`;
             });
         }
     });

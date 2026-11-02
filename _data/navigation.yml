@@ -1,7 +1,9 @@
 pages:
 - name: Home
+  name_zh: 首页
   url: ./
 - name: Publications
+  name_zh: 论文成果
   url: publications
 # - name: News
 #   url: ./#news
@@ -10,4 +12,5 @@ pages:
 # - name: Contact
 #   url: ./#contact
 - name: Showcase
+  name_zh: 展示
   url: /showcase

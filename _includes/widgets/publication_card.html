@@ -1,14 +1,25 @@
 {% assign publications = include.publications %}
+{% assign publication_card_title_en = include.title | default: '<i class="fas fa-star"></i> Selected Recent Publications' %}
+{% assign publication_card_title_zh = include.title_zh %}
+{% unless publication_card_title_zh %}
+    {% if include.title contains 'Selected Publications' %}
+        {% assign publication_card_title_zh = '<i class="fas fa-star"></i> 精选论文' %}
+    {% elsif include.title %}
+        {% assign publication_card_title_zh = include.title %}
+    {% else %}
+        {% assign publication_card_title_zh = '<i class="fas fa-star"></i> 近期精选论文' %}
+    {% endif %}
+{% endunless %}
 <div class="my-3 p-0 bg-white shadow-sm rounded-xl">
     <h6 class="border-bottom border-gray p-3 mb-0">
-        {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selected Recent Publications{% endif %} 
-        <a href="{{ 'publications' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
+        {% include i18n.html zh=publication_card_title_zh en=publication_card_title_en %}
+        <a href="{{ 'publications' | relative_url }}">({% include i18n.html zh='查看全部' en='view all' %} <i class="fas fa-angle-double-right"></i>)</a>
     </h6>
     {% for item in publications limit:include.limit %}
         {% include widgets/publication_item.html item=item first=false last=false %}    
     {% endfor %}
     <h6 class="d-block p-3 mt-0 text-right">
-        <a href="{{ 'publications' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
+        <a href="{{ 'publications' | relative_url }}">{% include i18n.html zh='全部论文' en='All publications' %} <i class="fas fa-angle-double-right"></i></a>
     </h6>
 </div>
 

@@ -1,4 +1,19 @@
 {%- assign venue = site.data.publication_venues.venues[include.venue_id] -%}
+{%- assign cas_category_en = venue.cas_category -%}
+{%- case venue.cas_category -%}
+  {%- when '计算机科学' -%}{%- assign cas_category_en = 'Computer Science' -%}
+  {%- when '医学' -%}{%- assign cas_category_en = 'Medicine' -%}
+{%- endcase -%}
+{%- capture cas_tooltip_zh -%}中科院 {{ site.data.publication_venues.cas.year }} 年升级版大类分区：{{ venue.cas_category }}{%- endcapture -%}
+{%- capture cas_tooltip_en -%}CAS {{ site.data.publication_venues.cas.year }} upgraded edition, broad-subject division: {{ cas_category_en }}{%- endcapture -%}
+{%- capture cas_label_zh -%}中科院 {{ venue.cas_zone }} 区{%- endcapture -%}
+{%- capture cas_label_en -%}CAS Zone {{ venue.cas_zone }}{%- endcapture -%}
+{%- capture cas_top_tooltip_zh -%}中科院 {{ site.data.publication_venues.cas.year }} 年升级版 Top 期刊{%- endcapture -%}
+{%- capture cas_top_tooltip_en -%}CAS {{ site.data.publication_venues.cas.year }} upgraded edition, Top journal{%- endcapture -%}
+{%- capture ccf_tooltip_zh -%}CCF {{ site.data.publication_venues.ccf.year }} 年第七版正式目录{%- endcapture -%}
+{%- capture ccf_tooltip_en -%}CCF {{ site.data.publication_venues.ccf.year }} official recommended list, seventh edition{%- endcapture -%}
+{%- capture non_ccf_tooltip_zh -%}未列入 CCF {{ site.data.publication_venues.ccf.year }} 年第七版正式目录{%- endcapture -%}
+{%- capture non_ccf_tooltip_en -%}Not included in the CCF {{ site.data.publication_venues.ccf.year }} official recommended list, seventh edition{%- endcapture -%}
 {%- comment -%}
 Display priority: CAS 1/2/3 align with CCF A/B/C. Prefer CAS when tied.
 {%- endcomment -%}
@@ -16,16 +31,16 @@ Display priority: CAS 1/2/3 align with CCF A/B/C. Prefer CAS when tied.
   {%- endif -%}
 {%- endif -%}
 {%- if display_cas -%}
-<span class="badge badge-pill badge-publication badge-info mr-1" title="中科院 {{ site.data.publication_venues.cas.year }} 年升级版大类分区：{{ venue.cas_category | escape }}">中科院 {{ venue.cas_zone }} 区</span>
+<span class="badge badge-pill badge-publication badge-info mr-1" title="{{ cas_tooltip_zh | escape }}" data-i18n-title-zh="{{ cas_tooltip_zh | escape }}" data-i18n-title-en="{{ cas_tooltip_en | escape }}">{% include i18n.html zh=cas_label_zh en=cas_label_en %}</span>
 {%- endif -%}
 {%- if venue.cas_top == true -%}
-<span class="badge badge-pill badge-publication badge-danger mr-1" title="中科院 {{ site.data.publication_venues.cas.year }} 年升级版 Top 期刊">中科院 Top</span>
+<span class="badge badge-pill badge-publication badge-danger mr-1" title="{{ cas_top_tooltip_zh | escape }}" data-i18n-title-zh="{{ cas_top_tooltip_zh | escape }}" data-i18n-title-en="{{ cas_top_tooltip_en | escape }}">{% include i18n.html zh='中科院 Top' en='CAS Top' %}</span>
 {%- endif -%}
 {%- if venue.ccf_grade and display_cas == false -%}
-<span class="badge badge-pill badge-publication badge-success mr-1" title="CCF {{ site.data.publication_venues.ccf.year }} 年第七版正式目录">CCF-{{ venue.ccf_grade }}</span>
+<span class="badge badge-pill badge-publication badge-success mr-1" title="{{ ccf_tooltip_zh | escape }}" data-i18n-title-zh="{{ ccf_tooltip_zh | escape }}" data-i18n-title-en="{{ ccf_tooltip_en | escape }}">CCF-{{ venue.ccf_grade }}</span>
 {%- elsif venue.ccf_listed == false -%}
-<span class="badge badge-pill badge-publication badge-secondary mr-1" title="未列入 CCF {{ site.data.publication_venues.ccf.year }} 年第七版正式目录">非 CCF 目录</span>
+<span class="badge badge-pill badge-publication badge-secondary mr-1" title="{{ non_ccf_tooltip_zh | escape }}" data-i18n-title-zh="{{ non_ccf_tooltip_zh | escape }}" data-i18n-title-en="{{ non_ccf_tooltip_en | escape }}">{% include i18n.html zh='非 CCF 目录' en='Not CCF-listed' %}</span>
 {%- endif -%}
 {%- if venue.kind == 'preprint' -%}
-<span class="badge badge-pill badge-publication badge-secondary mr-1" title="预印本，无期刊分区或 CCF 会议等级">arXiv Preprint</span>
+<span class="badge badge-pill badge-publication badge-secondary mr-1" title="预印本，无期刊分区或 CCF 会议等级" data-i18n-title-zh="预印本，无期刊分区或 CCF 会议等级" data-i18n-title-en="Preprint; no journal division or CCF conference grade">{% include i18n.html zh='arXiv 预印本' en='arXiv Preprint' %}</span>
 {%- endif -%}

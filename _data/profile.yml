@@ -1,10 +1,13 @@
 primary_name: "Xinliang Zhang"
+primary_name_zh: "张心亮"
 # secondary_name: ""
-resume: assets/cv/Resume.pdf
+resume: assets/cv/resume.pdf
 
 positions:
 - name: Ph.D. Student
+  name_zh: 博士研究生
 - name: Peking University
+  name_zh: 北京大学
   logo: /assets/images/badges/PKU_red.png  # Logo is optional
 
   # - '<span class="no-break"><img src="assets/images/badges/PKU_red.png" alt="Peking University" class="inline-badge"/></span> Ph.D. Student, Institute of Medical Technology, Peking University'
@@ -24,44 +27,69 @@ orcid: 0009-0009-8252-7597
 short_bio_text_justify: false
 short_bio: >-
   I am a Ph.D. student at the <span class="text-pku-red">Institute of Medical Technology, Peking University</span>. My research focuses on <span class="text-highlight">Multimodal Large Language Models for efficient reasoning and comprehension</span>. My interests include <span class="text-highlight">Multimodal Large Language Models</span>, <span class="text-highlight">Weakly Supervised Image Segmentation</span>, and <span class="text-highlight">Medical Image Analysis</span>. I am supervised by <a href="https://nbic.pku.edu.cn/en/Faculty/Researchers/AdjunctPrincipalInvestigators/0a96455fce164e508fbe96162ef92f79.htm" target="_blank">Prof. Yanye Lu</a>.
+short_bio_zh: >-
+  我是<span class="text-pku-red">北京大学医学技术研究院</span>的博士研究生，研究重点是<span class="text-highlight">多模态大语言模型的高效推理与理解</span>。我的研究兴趣包括<span class="text-highlight">多模态大语言模型</span>、<span class="text-highlight">弱监督图像分割</span>和<span class="text-highlight">医学图像分析</span>，导师为<a href="https://nbic.pku.edu.cn/rcdw/kyry/jzyjy/b33cd89d98fb414681de8b103b36a198.htm" target="_blank">卢闫晔老师</a>。
 
 portrait_url: /assets/images/photos/myphoto.jpg
 portrait_caption: >-
   I am a Ph.D. student at Peking University.
+portrait_caption_zh: >-
+  我是北京大学的博士研究生。
 
 education:
 - name: Peking University
+  name_zh: 北京大学
   logo: /assets/images/badges/PKU_red.png
   position: >- 
     Institute of Medical Technology, Peking University Health Science Center <br/>
     Ph.D. Student
+  position_zh: >-
+    北京大学医学部医学技术研究院 <br/>
+    博士研究生
   date: Sep. 2025 - Present
+  date_zh: 2025年9月－至今
 - name: Tianjin University
+  name_zh: 天津大学
   logo: /assets/images/badges/tju_badge_white.png
   position: >- 
     College of Intelligence and Computing <br/>
     M.S Student
+  position_zh: >-
+    智能与计算学部 <br/>
+    硕士研究生
   date: Sep. 2021 - Jul. 2024
+  date_zh: 2021年9月－2024年7月
 - name: Ocean University of China
+  name_zh: 中国海洋大学
   logo: /assets/images/badges/OUC.png
   position: >- 
     School of Computer Science and Technology <br/>
     B.S. Student
+  position_zh: >-
+    计算机科学与技术学院 <br/>
+    本科生
   date: Sep. 2017 - Jul. 2021
+  date_zh: 2017年9月－2021年7月
 
 
 experience:
 - name: Peking University
+  name_zh: 北京大学
   logo: /assets/images/badges/PKU_red.png
-  position: Research Intern
+  position: Research Assistant
+  position_zh: 科研助理
   date: May. 2024 - Sep. 2025
+  date_zh: 2024年5月－2025年9月
 
 awards:
 - name: Outstanding cadres of Tianjin University
+  name_zh: 天津大学优秀学生干部
   date: 2024
 - name: Outstanding graduates of Shandong Province
+  name_zh: 山东省优秀毕业生
   date: 2021
 - name: China Underwater Robot Professional Contest - Second Prize
+  name_zh: 中国水下机器人专业赛二等奖
   date: 2019
 # - name: A quick brown fox jumps over the lazy dog and runs away award
 #   date: 2021

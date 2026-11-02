@@ -1,16 +1,22 @@
 {%- assign certificate = include.certificate -%}
+{%- assign certificate_title_zh = certificate.title_zh | default: certificate.title -%}
+{%- assign certificate_title_en = certificate.title_en | default: certificate.title -%}
+{%- capture certificate_label_zh -%}查看{{ certificate_title_zh }}（PDF）{%- endcapture -%}
+{%- capture certificate_label_en -%}View {{ certificate_title_en }} certificate (PDF){%- endcapture -%}
+{%- capture certificate_alt_zh -%}张鑫亮的{{ certificate_title_zh }}{%- endcapture -%}
+{%- capture certificate_alt_en -%}{{ certificate_title_en }} certificate awarded to Xinliang Zhang{%- endcapture -%}
 <article class="reviewer-certificate">
-    <a href="{{ certificate.certificate_url | relative_url }}" class="d-block" target="_blank" rel="noopener noreferrer" aria-label="View {{ certificate.title | escape }} certificate (PDF)">
-        <img src="{{ certificate.preview_url | relative_url }}" alt="{{ certificate.title | escape }} certificate awarded to Xinliang Zhang" class="img-fluid reviewer-certificate-preview" width="{{ certificate.preview_width }}" height="{{ certificate.preview_height }}" loading="lazy" decoding="async">
+    <a href="{{ certificate.certificate_url | relative_url }}" class="d-block" target="_blank" rel="noopener noreferrer" aria-label="{{ certificate_label_zh | escape }}" data-i18n-aria-label-zh="{{ certificate_label_zh | escape }}" data-i18n-aria-label-en="{{ certificate_label_en | escape }}">
+        <img src="{{ certificate.preview_url | relative_url }}" alt="{{ certificate_alt_zh | escape }}" data-i18n-alt-zh="{{ certificate_alt_zh | escape }}" data-i18n-alt-en="{{ certificate_alt_en | escape }}" class="img-fluid reviewer-certificate-preview" width="{{ certificate.preview_width }}" height="{{ certificate.preview_height }}" loading="lazy" decoding="async">
     </a>
     <div class="p-4">
         {% if certificate.outstanding %}
-        <span class="badge badge-warning mb-2">Outstanding Reviewer</span>
+        <span class="badge badge-warning mb-2">{% include i18n.html zh='杰出审稿人' en='Outstanding Reviewer' %}</span>
         {% else %}
-        <span class="badge badge-info mb-2">Journal Reviewer</span>
+        <span class="badge badge-info mb-2">{% include i18n.html zh='期刊审稿人' en='Journal Reviewer' %}</span>
         {% endif %}
-        <h2 class="h5 mb-2">{{ certificate.title }}</h2>
-        <p class="small text-muted mb-3"><time datetime="{{ certificate.date | date: '%Y-%m-%d' }}">{{ certificate.date | date: '%B %d, %Y' }}</time></p>
-        <a href="{{ certificate.certificate_url | relative_url }}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">View Certificate (PDF) <i class="fas fa-external-link-alt ml-1" aria-hidden="true"></i></a>
+        <h2 class="h5 mb-2">{% include i18n.html zh=certificate_title_zh en=certificate_title_en %}</h2>
+        <p class="small text-muted mb-3"><time datetime="{{ certificate.date | date: '%Y-%m-%d' }}">{% assign certificate_date_zh = certificate.date | date: '%Y年%m月%d日' %}{% assign certificate_date_en = certificate.date | date: '%B %d, %Y' %}{% include i18n.html zh=certificate_date_zh en=certificate_date_en %}</time></p>
+        <a href="{{ certificate.certificate_url | relative_url }}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer" aria-label="{{ certificate_label_zh | escape }}" data-i18n-aria-label-zh="{{ certificate_label_zh | escape }}" data-i18n-aria-label-en="{{ certificate_label_en | escape }}">{% include i18n.html zh='查看证书（PDF）' en='View Certificate (PDF)' %} <i class="fas fa-external-link-alt ml-1" aria-hidden="true"></i></a>
     </div>
 </article>

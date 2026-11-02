@@ -1,7 +1,7 @@
 {% assign news_by_year = site.news | sort: "date" | reverse | slice: 0, include.limit | group_by_exp: "item", "item.date | date: '%Y'" -%}
 
 <div class="my-3 bg-white shadow-sm rounded-xl">
-    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-rss"></i> News</h6>
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-rss"></i> {% include i18n.html zh='最新动态' en='News' %}</h6>
     <div class="px-3 pb-1 small">
         {% for year in news_by_year %}
         <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">
@@ -11,12 +11,14 @@
                 {% for item in year.items %}
                 <div class="my-1 d-flex">
                     <div>
-                        {{ item.title }}
+                        {% assign news_title_zh = item.title_zh | default: item.title %}
+                        {% assign news_title_en = item.title_en | default: item.title %}
+                        {% include i18n.html zh=news_title_zh en=news_title_en %}
                         {% if item.certificate_url %}
-                        <a href="{{ item.certificate_url | relative_url }}" target="_blank" rel="noopener noreferrer">[Certificate]</a>
+                        <a href="{{ item.certificate_url | relative_url }}" target="_blank" rel="noopener noreferrer">{% include i18n.html zh='[证书]' en='[Certificate]' %}</a>
                         {% endif %}
                     </div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>{{ item.date | date: "%b %d" }}</i></div>
+                    <div class="ml-auto mt-auto text-muted no-break"><i>{% assign news_date_zh = item.date | date: '%m月%d日' %}{% assign news_date_en = item.date | date: '%b %d' %}{% include i18n.html zh=news_date_zh en=news_date_en %}</i></div>
                 </div>
                 {% endfor %}
             </div>

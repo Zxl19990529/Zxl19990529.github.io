@@ -1,0 +1,7 @@
+{%- assign text_zh = include.zh | default: include.en -%}
+{%- assign text_en = include.en | default: include.zh -%}
+{%- if include.block -%}
+<div lang="zh-CN" data-i18n-lang="zh">{{ text_zh }}</div><div lang="en" data-i18n-lang="en">{{ text_en }}</div>
+{%- else -%}
+<span lang="zh-CN" data-i18n-lang="zh">{{ text_zh }}</span><span lang="en" data-i18n-lang="en">{{ text_en }}</span>
+{%- endif -%}

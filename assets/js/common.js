@@ -39,4 +39,14 @@ $(function () {
     $(".lazy").on("load", function () {
         $grid.masonry('layout');
     });
+
+    document.addEventListener('languagechange', function () {
+        $grid.masonry('layout');
+        document.querySelectorAll('[data-masonry]').forEach(function (element) {
+            var masonry = Masonry.data(element);
+            if (masonry) masonry.layout();
+        });
+        if ($('body').data('bs.scrollspy')) $('body').scrollspy('refresh');
+        $('[data-toggle="tooltip"]').tooltip('hide');
+    });
 })

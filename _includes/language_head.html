@@ -1,0 +1,6 @@
+<style>
+    html:not([data-language="en"]) [data-i18n-lang="en"],
+    html[data-language="en"] [data-i18n-lang="zh"] { display: none !important; }
+</style>
+{% assign language_script = site.static_files | where: 'path', '/assets/js/language.js' | first %}
+<script src="{{ '/assets/js/language.js' | relative_url }}?v={{ language_script.modified_time | date: '%s' }}"></script>

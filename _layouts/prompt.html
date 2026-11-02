@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html class="h-100">
+<html class="h-100" lang="zh-CN" data-language="zh" data-title-zh="{{ page.title_zh | default: page.title | escape }}" data-title-en="{{ page.title | escape }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title_zh | default: page.title }}</title>
+    {% include language_head.html %}
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +22,7 @@
 <body class="d-flex flex-column h-100">
     <main role="main" class="flex-shrink-0">
         <div class="container">
+            <div class="d-flex justify-content-end bg-dark rounded p-2 mt-3">{% include language_switcher.html %}</div>
             {{ content }}
         </div>
     </main>

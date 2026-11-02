@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN" data-language="zh" data-title-zh="{{ page.title_zh | default: page.title | escape }} - {{ site.data.profile.primary_name_zh | default: site.data.profile.primary_name | escape }}" data-title-en="{{ page.title | escape }} - {{ site.data.profile.primary_name | escape }}">
 <!-- Template: https://github.com/luost26/academic-homepage -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
+    <title>{{ page.title_zh | default: page.title }} - {{ site.data.profile.primary_name_zh | default: site.data.profile.primary_name }}</title>
+    {% include language_head.html %}
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />

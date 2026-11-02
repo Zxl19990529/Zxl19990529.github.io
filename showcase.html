@@ -1,6 +1,7 @@
 ---
 layout: default
 title : Showcase
+title_zh: 展示
 navbar_title: Showcase
 container_class: container-xl
 ---
@@ -10,7 +11,7 @@ container_class: container-xl
 {% for group in cards_by_group %}
 {% assign certificate_group = false %}
 {% if group.name == 'Reviewer Certificates' %}{% assign certificate_group = true %}{% endif %}
-<h1>{{ group.name }}</h1>
+<h1>{% if certificate_group %}{% include i18n.html zh='审稿证书' en='Reviewer Certificates' %}{% else %}{{ group.name }}{% endif %}</h1>
 <div class="row mb-4 {% if certificate_group %}reviewer-certificate-grid{% else %}grid{% endif %}">
     {% unless certificate_group %}
     <div class="grid-sizer col-1"></div>

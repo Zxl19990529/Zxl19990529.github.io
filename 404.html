@@ -1,7 +1,8 @@
 ---
 layout: prompt
 title: 404 - Page Not Found
+title_zh: 404 - 页面未找到
 ---
 <h1 class="mt-5">404</h1>
-<p class="lead">The requested page could not be found.</p>
-<p><a href="{{ '/' | relative_url }}">Go home</a></p>
+<p class="lead">{% include i18n.html zh="找不到你访问的页面。" en="The requested page could not be found." %}</p>
+<p><a href="{{ '/' | relative_url }}">{% include i18n.html zh="返回首页" en="Go home" %}</a></p>
